@@ -1,9 +1,12 @@
 {
   "name": "to-mp4",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "./index.js",
   "license": "UNLICENSED",
   "description": "Compress and convert videos to mp4",
+  "bin": {
+    "to-mp4": "./index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
