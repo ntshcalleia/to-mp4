@@ -1,18 +1,18 @@
 # to-mp4
 
-Simple way to convert any video to mp4 using ffmpeg. It compresses videos without affecting the quality too much.
-
+Quickly transcode videos to mp4 with an easy to remember command:
 ```
 npx to-mp4 video.mov
 ```
 
-## Keep It Simple, Stupid
+Works with any file type, the only requirement is to have `ffmpeg` installed.
 
-All this does is run the command:
+## How it works
+
+This script will run the following command:
+
 ```
-ffmpeg -i video.mov -vcodec libx264 -crf 24 video.mp4
+ffmpeg -i video.mov -vcodec libx264 -crf 20 video.mp4
 ```
 
-## Requirements
-
-The only requirement is to have `ffmpeg` installed.
+The output is a compressed - but still high quality - mp4 video file. I've been using it for compressing screen recordings before uploading them to Slack and other platforms - just because `npx to-mp4` is a lot easier to remember than the full ffmpeg command.
